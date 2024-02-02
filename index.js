@@ -57,19 +57,26 @@ const questions = () =>
     }
   ]);
 
-  questions()
-  .then((answers) => writeFileAsync('SAMPLEREADME.md', generateMarkdown(answers)))
-  .then(() => console.log('Successfully wrote to README.md'))
-  .catch((err) => console.error(err));
+  // questions()
+  // .then((answers) => writeFileAsync('SAMPLEREADME.md', generateMarkdown(answers)))
+  // .then(() => console.log('Successfully wrote to README.md'))
+  // .catch((err) => console.error(err));
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
+// function to initialize program
+const init = async () => {
+  console.log('hi');
+  try {
+    const answers = await questions();
 
-// // function to initialize program
-// function init() {
+    const markdown = generateMarkdown(answers);
 
-// }
+    await writeFileAsync('SAMPLEREADME.md', markdown);
 
-// // function call to initialize program
-// init();
+    console.log('Successfully wrote to SAMEPLREADME.md');
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+// function call to initialize program
+init();
