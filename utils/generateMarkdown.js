@@ -13,7 +13,7 @@ function generateMarkdown(data) {
   - [Usage](#Usage)
   - [Contributing](#Contributing)
   - [Tests](#Tests)
-  - [License](#License)
+  - ${renderLicenseLink(data.license)}
   - [Questions & Contact](#Questions)
   
   ## Installation
@@ -22,29 +22,51 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ${renderLicense(data.license)}
+  
   ## Contributing
   ${data.contributing}
 
   ## Tests
   ${data.tests}
   
-  ## License 
-  ${data.license}
-
   ## Questions
-  ${data.github}
-
-  ${data.email}
+  - View my GitHub profile here: [${data.github}](https://github.com/${data.github})
+  - If you have any additional questions, contact me: [${data.email}](mailto:${data.email})
 
 `;
 }
 
 module.exports = generateMarkdown;
 
+// Function to set license badge
 function setLicense(license) {
   if (license === 'None') {
     return ''
   } else {
     return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  }
+}
+
+// Function to render license link in ToC
+function renderLicenseLink(license) {
+  if (license !== 'None') {
+    return (
+      `[License](#License)`
+    )
+  } else {
+    return '' // Return empty string
+  }
+}
+
+// Function to render license section
+function renderLicense(license) {
+  if (license !== 'None') {
+    return (
+      `## License
+  This project is licensed under the **${license}** license`
+    )
+  } else {
+    return '' // Return empty string
   }
 }
