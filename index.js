@@ -30,10 +30,10 @@ const questions = () =>
       message: 'Please enter usage information',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'Please choose a license',
-      choices: ['MIT', 'Creative Commons', 'None', '']
+      choices: ['MIT', 'Creative Commons', 'Apache License 2.0', 'None']
     },
     {
       type: 'input',
@@ -58,7 +58,7 @@ const questions = () =>
   ]);
 
   questions()
-  .then((answers) => writeFileAsync('output/README.md', generateMarkdown(answers)))
+  .then((answers) => writeFileAsync('SAMPLEREADME.md', generateMarkdown(answers)))
   .then(() => console.log('Successfully wrote to README.md'))
   .catch((err) => console.error(err));
 

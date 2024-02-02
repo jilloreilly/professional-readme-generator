@@ -2,48 +2,39 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${setLicense(data.license)};
+  ${setLicense(data.license)}
 
-## Description
+  ## Description
+  ${data.description}
 
-${data.description}
+  ## Table of contents:
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [License](#License)
+  - [Questions & Contact](#Questions)
+  
+  ## Installation
+  ${data.installation}
 
-## Table of contents
-[Installation](#Installation)
+  ## Usage
+  ${data.usage}
 
-## Installation
+  ## Contributing
+  ${data.contributing}
 
-${data.installation}
+  ## Tests
+  ${data.tests}
+  
+  ## License 
+  ${data.license}
 
-## Usage
+  ## Questions
+  ${data.github}
 
-${data.usage}
-
-## Contributing
-
-${data.contributing}
-
-## Tests
-
-${data.tests}
-
-
-## License 
-
-${data.license}
-
-## Questions
-${data.github}
-
-${data.email}
-
-
-
-
-
-
-
-
+  ${data.email}
 
 `;
 }
@@ -54,6 +45,6 @@ function setLicense(license) {
   if (license === 'None') {
     return ''
   } else {
-    return ``// render license badge here, replace apache with ${license}
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
   }
 }
