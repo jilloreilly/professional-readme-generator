@@ -1,21 +1,75 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
+const util = require('util');
 const generateMarkdown = require("./utils/generateMarkdown");
 
+const writeFileAsync = util.promisify(fs.writeFile);
+
 // array of questions for user
-const questions = [
+const questions = () =>
+  inquirer.prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: 'What is the title of your project?',
+    },
+    {
+      type: 'input',
+      name: 'description',
+      message: 'Please enter a project description',
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Please enter the installation instructions',
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Please enter usage information',
+    },
+    {
+      type: 'input',
+      name: 'license',
+      message: 'Please choose a license',
+      choices: ['MIT', 'Creative Commons', 'None', '']
+    },
+    {
+      type: 'input',
+      name: 'contributing',
+      message: 'Enter contribution information',
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'Please enter test instructions',
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter your GitHub Username',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Please enter your email',
+    }
+  ]);
 
-];
+  questions()
+  .then((answers) => writeFileAsync('output/README.md', generateMarkdown(answers)))
+  .then(() => console.log('Successfully wrote to README.md'))
+  .catch((err) => console.error(err));
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
+// // function to write README file
+// function writeToFile(fileName, data) {
+// }
 
-// function to initialize program
-function init() {
+// // function to initialize program
+// function init() {
 
-}
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
