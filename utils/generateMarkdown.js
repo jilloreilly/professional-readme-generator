@@ -70,7 +70,7 @@ function renderLicense(license) {
   }
 }
 
-// Function to render license link in ToC
+// Function to render Tests link in ToC
 function renderTestsLink(tests) {
   if (tests !== '') {
     return (
