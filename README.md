@@ -34,7 +34,7 @@ Screenshot of generated README.md
 
 
 ## Video
-Walkthrough video link here 
+[Walkthrough video](https://drive.google.com/file/d/1gCTz3v-LOCv-E_qlTLLhEoax9M8i1Sbe/view) 
 
 ## Credits
 
