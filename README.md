@@ -4,12 +4,12 @@ A command-line application that dynamically generates a professional README.md f
 
   ## Table of contents:
   - [Description](#Description)
-  - [Usage & Installation](#Usage-&-installation)
+  - [Usage & Installation](#Usage--installation)
   - [Video Walkthrough](#Video)
   - [Credits](#Credits)
   - [License](#License)
   - [Technologies Used](#Technologies-used)
-  - [Questions & Contact](#Questions)
+  - [Questions & Contact](#Questions--contact)
 
 ## Description
 
@@ -79,7 +79,7 @@ SOFTWARE.
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow)
 ![Static Badge](https://img.shields.io/badge/NPM-red)
 
-## Questions
+## Questions & Contact
   - View my GitHub profile here: [jilloreilly](https://github.com/jilloreilly)
   - If you have any additional questions, contact me: [jill.l.oreilly@gmail.com](mailto:jill.l.oreilly@gmail.com)
 
