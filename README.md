@@ -4,11 +4,11 @@ A command-line application that dynamically generates a professional README.md f
 
   ## Table of contents:
   - [Description](#Description)
-  - [Usage](#Usage)
+  - [Usage & Installation](#Usage-&-installation)
   - [Video Walkthrough](#Video)
   - [Credits](#Credits)
   - [License](#License)
-  - [Technologies Used](#Technologies)
+  - [Technologies Used](#Technologies-used)
   - [Questions & Contact](#Questions)
 
 ## Description
