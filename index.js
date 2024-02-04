@@ -64,7 +64,7 @@ const questions = () =>
 
 // function to initialize program
 const init = async () => {
-  console.log('hi');
+  //console.log('hi');
   try {
     const answers = await questions();
 
