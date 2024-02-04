@@ -13,13 +13,13 @@ A command-line application that dynamically generates a professional README.md f
 
 ## Description
 
-This README Generator showcases the JavaScrip(ES6), Node.js and npm skills I have gained from Module 11 (Working withh ES6 and Node.js) of the Front-end Web Development Bootcamp. 
+This README Generator showcases the JavaScript(ES6), Node.js and npm skills I have gained from Module 11 (Working withh ES6 and Node.js) of the Front-end Web Development Bootcamp. 
 
 The  README Generator will run in the terminal and features a dynamically generated README.md file based on user input.
 
 ## Usage & Installation
 
-1. The **Professional README Generator** can be installed by copying the files to your machine
+1. The **Professional README Generator** can be installed by copying the source files to your machine
 
 2. The application will be invoked by using the following command:
 
