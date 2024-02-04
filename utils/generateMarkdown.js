@@ -12,8 +12,8 @@ function generateMarkdown(data) {
   - [Installation](#Installation)
   - [Usage](#Usage)
   - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - ${renderLicenseLink(data.license)}
+  ${renderTestsLink(data.tests)}
+  ${renderLicenseLink(data.license)}
   - [Questions & Contact](#Questions)
   
   ## Installation
@@ -27,8 +27,7 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contributing}
 
-  ## Tests
-  ${data.tests}
+  ${renderTests(data.tests)}
   
   ## Questions
   - View my GitHub profile here: [${data.github}](https://github.com/${data.github})
@@ -52,19 +51,42 @@ function setLicense(license) {
 function renderLicenseLink(license) {
   if (license !== 'None') {
     return (
-      `[License](#License)`
+      `- [License](#License)`
     )
   } else {
     return '' // Return empty string
   }
 }
 
-// Function to render license section
+// Function to render License section
 function renderLicense(license) {
   if (license !== 'None') {
     return (
       `## License
   This project is licensed under the **${license}** license`
+    )
+  } else {
+    return '' // Return empty string
+  }
+}
+
+// Function to render license link in ToC
+function renderTestsLink(tests) {
+  if (tests !== '') {
+    return (
+      `- [Tests](#Tests)`
+    )
+  } else {
+    return '' // Return empty string
+  }
+}
+
+// Function to render Tests section
+function renderTests(tests) {
+  if (tests !== '') {
+    return (
+      `## License
+  ${tests}`
     )
   } else {
     return '' // Return empty string
