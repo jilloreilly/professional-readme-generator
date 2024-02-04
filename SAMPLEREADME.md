@@ -1,9 +1,9 @@
-# blah
+# README Generator
 
-  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  ![License](https://img.shields.io/badge/License-GNU-blue.svg)
 
   ## Description
-  blah blah
+  A professional README Generator for all your web dev projects
 
   ## Table of contents:
   - [Description](#Description)
@@ -15,22 +15,21 @@
   - [Questions & Contact](#Questions)
   
   ## Installation
-  blah blah balh
+  Copy the files onto your machine
 
   ## Usage
-  blah
+  To run the generator, type node index.js in your terminal
 
+  ## License
+  This project is licensed under the **GNU** license
+  
   ## Contributing
-  me
+  Me
 
-  ## Tests
+  ## License
+  Test instructions here
   
-  
-  ## License 
-  MIT
-
   ## Questions
-  blah
-
-  blah@blah.com
+  - View my GitHub profile here: [jilloreilly](https://github.com/jilloreilly)
+  - If you have any additional questions, contact me: [jill.l.oreilly@gmail.com](mailto:jill.l.oreilly@gmail.com)
 
