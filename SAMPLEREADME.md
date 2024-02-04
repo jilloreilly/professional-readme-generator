@@ -1,9 +1,9 @@
-# README Generator
+# Professional README Generator
 
-  ![License](https://img.shields.io/badge/License-GNU-blue.svg)
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  A professional README Generator for all your web dev projects
+  A command-line application that dynamically generates a professional README.md file from a users input
 
   ## Table of contents:
   - [Description](#Description)
@@ -15,19 +15,19 @@
   - [Questions & Contact](#Questions)
   
   ## Installation
-  Copy the files onto your machine
+  Copy the source files onto your machine
 
   ## Usage
-  To run the generator, type node index.js in your terminal
+  In your terminal, type: node index.js
 
   ## License
-  This project is licensed under the **GNU** license
+  This project is licensed under the **MIT** license
   
   ## Contributing
-  Me
+  Contribution information here
 
   ## License
-  Test instructions here
+  Testing instructions here
   
   ## Questions
   - View my GitHub profile here: [jilloreilly](https://github.com/jilloreilly)
