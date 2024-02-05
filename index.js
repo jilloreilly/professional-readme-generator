@@ -33,7 +33,7 @@ const questions = () =>
       type: 'list',
       name: 'license',
       message: 'Please choose a license',
-      choices: ['MIT', 'GNU', 'Apache', 'None']
+      choices: ['MIT', 'GNU General Public License v3.0', 'Apache License 2.0', 'None']
     },
     {
       type: 'input',
@@ -70,7 +70,7 @@ const init = async () => {
 
     await writeFileAsync('./output/README.md', generateMarkdown(answers));
 
-    console.log('Successfully wrote to SAMEPLREADME.md');
+    console.log('Successfully wrote to ./output/README.md');
   } catch (err) {
     console.log(err);
   }
