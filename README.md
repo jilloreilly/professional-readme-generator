@@ -1,5 +1,7 @@
 # Professional README Generator
 
+ ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+
 A command-line application that dynamically generates a professional README.md file from a user's input
 
   ## Table of contents:
@@ -15,11 +17,11 @@ A command-line application that dynamically generates a professional README.md f
 
 This README Generator showcases the JavaScript(ES6), Node.js and npm skills I have gained from Module 11 (Working withh ES6 and Node.js) of the Front-end Web Development Bootcamp. 
 
-The  README Generator will run in the terminal and features a dynamically generated README.md file based on user input.
+The README Generator will run in the terminal and features a dynamically generated README.md file based on user input.
 
 ## Usage & Installation
 
-1. The **Professional README Generator** can be installed by copying the source files to your machine
+1. The **Professional README Generator** can be installed by cloning the source files to your machine
 
 2. The application will be invoked by using the following command:
 
@@ -28,7 +30,7 @@ The  README Generator will run in the terminal and features a dynamically genera
    ```
 ![README Generator questions in terminal](assets/images/1-screenshot-readme-generator.png)
 
-3. Once opened in the command line, follow the prompts to answer questions about your  project. When you are finished answering all the questions, the program will generate a README.
+3. Once opened in the command line, follow the prompts to answer questions about your  project. When you are finished answering all the questions, the program will generate a README.md file to the /output directory.
 
 ![Screenshot of generated README.md](assets/images/2-screenshot-generated-readme.png)
 
@@ -46,6 +48,8 @@ Thank you to the following:
 - w3Schools: [async](https://www.w3schools.com/js/js_async.asp)
 
 - Pod 2 TA **Christopher Kratz** for guiding us on the JavaScript, Node.js and npm for the challenge
+
+- Bobbi Tarkany (tutor) - for her advice on expanding some of the functions
 
 
 ## License
