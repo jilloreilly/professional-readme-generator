@@ -2,8 +2,12 @@
 function setLicense(license) {
   if (license === 'None') {
     return ``
-  } else {
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  } else if (license === 'Apache License 2.0') {
+    return `![Static Badge](https://img.shields.io/badge/License-Apache%20License%202.0-blue)`
+  } else if (license === 'MIT') {
+    return `![Static Badge](https://img.shields.io/badge/License-MIT-blue)`
+  } else if (license === 'GNU General Public License v3.0') {
+    return `![Static Badge](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue)`
   }
 }
 
