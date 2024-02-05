@@ -1,3 +1,58 @@
+// Function to set license badge
+function setLicense(license) {
+  if (license === 'None') {
+    return ``
+  } else {
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  }
+}
+
+// Function to render license link in ToC
+function renderLicenseLink(license) {
+  if (license !== 'None') {
+    return (
+      `- [License](#License)`
+    )
+  } else {
+    return `` // Return empty string
+  }
+}
+
+// Function to render License section
+function renderLicense(license) {
+  if (license !== 'None') {
+    return (
+      `## License
+  This project is licensed under the **${license}** license`
+    )
+  } else {
+    return `` // Return empty string
+  }
+}
+
+// Function to render Tests link in ToC
+function renderTestsLink(tests) {
+  if (tests !== '') {
+    return (
+      `- [Tests](#Tests)`
+    )
+  } else {
+    return `` // Return empty string
+  }
+}
+
+// Function to render Tests section
+function renderTests(tests) {
+  if (tests !== '') {
+    return (
+      `## Tests
+  ${tests}`
+    )
+  } else {
+    return `` // Return empty string
+  }
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -37,58 +92,3 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
-
-// Function to set license badge
-function setLicense(license) {
-  if (license === 'None') {
-    return ''
-  } else {
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
-  }
-}
-
-// Function to render license link in ToC
-function renderLicenseLink(license) {
-  if (license !== 'None') {
-    return (
-      `- [License](#License)`
-    )
-  } else {
-    return '' // Return empty string
-  }
-}
-
-// Function to render License section
-function renderLicense(license) {
-  if (license !== 'None') {
-    return (
-      `## License
-  This project is licensed under the **${license}** license`
-    )
-  } else {
-    return '' // Return empty string
-  }
-}
-
-// Function to render Tests link in ToC
-function renderTestsLink(tests) {
-  if (tests !== '') {
-    return (
-      `- [Tests](#Tests)`
-    )
-  } else {
-    return '' // Return empty string
-  }
-}
-
-// Function to render Tests section
-function renderTests(tests) {
-  if (tests !== '') {
-    return (
-      `## License
-  ${tests}`
-    )
-  } else {
-    return '' // Return empty string
-  }
-}
