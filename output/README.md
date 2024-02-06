@@ -3,7 +3,7 @@
   ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 
   ## Description
-  A command-line application that dynamically generates a professional README.md file from a user's input
+  A command-line application that dynamically generates a professional README.md file from a users input
 
   ## Table of contents:
   - [Description](#Description)
@@ -18,7 +18,7 @@
   Clone the source files onto your machine
 
   ## Usage
-  CD into the application directory in your terminal, then type: node index.js
+  CD into the application directory in your terminal , then type: node index.js
 
   ## License
   This project is licensed under the **MIT** license.
