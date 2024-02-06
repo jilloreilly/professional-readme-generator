@@ -39,7 +39,7 @@ The README Generator will run in the terminal and features a dynamically generat
 ***
 
 ## Video
-[Walkthrough video](https://drive.google.com/file/d/1hoHJdjV5x4rCo8QsDt2X6UtBlnpTvxfk/view) 
+[Walkthrough video](https://drive.google.com/file/d/1eyfg4a3GqiizfZWwfdAOh4MElrUz_tKH/view) 
 
 ## Credits
 
