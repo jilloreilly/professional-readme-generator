@@ -32,7 +32,11 @@ The README Generator will run in the terminal and features a dynamically generat
 
 3. Once opened in the command line, follow the prompts to answer questions about your  project. When you are finished answering all the questions, the program will generate a README.md file to the /output directory.
 
+***
+##### Screenshot of generated  README.md file:
 ![Screenshot of generated README.md](assets/images/2-screenshot-generated-readme.jpg)
+
+***
 
 ## Video
 [Walkthrough video](https://drive.google.com/file/d/1hoHJdjV5x4rCo8QsDt2X6UtBlnpTvxfk/view) 
