@@ -1,4 +1,4 @@
-# README Generator
+# Professional README Generator
 
   ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 
@@ -21,7 +21,9 @@
   CD into the application directory in your terminal, then type: node index.js
 
   ## License
-  This project is licensed under the **MIT** license
+  This project is licensed under the **MIT** license.
+      
+  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
   
   ## Contributing
   Contribution information here
